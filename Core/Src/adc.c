@@ -32,6 +32,7 @@ void MX_ADC1_Init(void)
     Error_Handler();
   }
 
+  sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = 2;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
