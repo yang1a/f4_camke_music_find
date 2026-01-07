@@ -1,0 +1,24 @@
+Remove-Item .gitignore -Force -ErrorAction SilentlyContinue
+
+@"
+# ===== Build output =====
+build/
+cmake/
+
+# ===== VS Code =====
+.vscode/
+
+# ===== CubeMX =====
+*.ioc
+.mxproject
+
+# ===== Toolchain outputs =====
+*.elf
+*.map
+*.hex
+*.bin
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding utf8 .gitignore
