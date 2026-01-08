@@ -51,6 +51,12 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Core/Src/app.c
+    Core/Src/audio_capture.c
+    Core/Src/doa.c
+    Core/Src/doa_ncc.c
+    Core/Src/doa_gcc_phat.c
+    Core/Src/servo.c
 )
 
 # Add include paths
